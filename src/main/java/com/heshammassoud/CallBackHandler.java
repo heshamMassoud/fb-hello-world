@@ -123,11 +123,7 @@ public class CallBackHandler {
             try {
                 switch (messageText.toLowerCase()) {
 
-
-                    case "yo":
-                        sendTextMessage(senderId, "Holaa!! What I can do for you ? Type the word you're looking for");
-                        break;
-
+                    case "Hi":break;
                     case "great":
                         sendTextMessage(senderId, "You're welcome :) keep rocking");
                         break;
@@ -136,7 +132,9 @@ public class CallBackHandler {
                     default:
                         sendReadReceipt(senderId);
                         sendTypingOn(senderId);
-                        sendTextMessage(senderId, "fallaaaa boy!! beijos!");
+                        sendTextMessage(senderId, "Holaa!! I am still gaining my knowledge. But right now I am " +
+                                "still stupid. Anyways, are you ready to move " +
+                                "in to your new Penthouse!!! Can't wait for you here ;)");
                         sendTypingOff(senderId);
                 }
             } catch (MessengerApiException | MessengerIOException e) {
