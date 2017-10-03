@@ -136,14 +136,11 @@ public class CallBackHandler {
                     default:
                         sendReadReceipt(senderId);
                         sendTypingOn(senderId);
-                        sendSpringDoc(senderId, messageText);
-                        sendQuickReply(senderId);
+                        sendTextMessage(senderId, "fallaaaa boy!! beijos!");
                         sendTypingOff(senderId);
                 }
             } catch (MessengerApiException | MessengerIOException e) {
                 handleSendException(e);
-            } catch (IOException e) {
-                handleIOException(e);
             }
         };
     }

@@ -1,6 +1,6 @@
 messenger4j:
   appSecret: 7184ac386d3a63b83e9481d454005255
-  verifyToken : hola
+  verifyToken: hola
   pageAccessToken: EAAMWhgPf8lABAJqQN6poUOJZAQ69u84xzD29IXJuQKzEYS0Ss82eZBau3WyRUls1FcvQsMIDeUtQAE1x3tufKNA4H2OMrRCc250YWEEqTSWoyg9YIpHUgu30UdyfvQDbqKooI1cJUl8ZCaOFyiUtDeVL9EdGbslkuWWULZALYQZDZD
 
 logging:
