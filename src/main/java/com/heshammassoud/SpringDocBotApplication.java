@@ -26,13 +26,13 @@ public class SpringDocBotApplication {
 		logger.debug("Initializing MessengerSendClient - pageAccessToken: {}", pageAccessToken);
 		final MessengerSendClient messengerClient = MessengerPlatform.newSendClientBuilder(pageAccessToken).build();
 		try {
-			messengerClient.sendTextMessage("129486694374353", "Ya Hesham!");
-			messengerClient.sendTextMessage("129486694374353", "Please Answer!");
-			messengerClient.sendTextMessage("129486694374353", "me");
-			messengerClient.sendTextMessage("129486694374353", "now!");
-			messengerClient.sendTextMessage("129486694374353", "please");
-			messengerClient.sendTextMessage("129486694374353", "wake up");
-			messengerClient.sendTextMessage("129486694374353", "hola");
+			messengerClient.sendTextMessage("1466251353456748", "Ya Hesham!");
+			messengerClient.sendTextMessage("1466251353456748", "Please Answer!");
+			messengerClient.sendTextMessage("1466251353456748", "me");
+			messengerClient.sendTextMessage("1466251353456748", "now!");
+			messengerClient.sendTextMessage("1466251353456748", "please");
+			messengerClient.sendTextMessage("1466251353456748", "wake up");
+			messengerClient.sendTextMessage("1466251353456748", "hola");
 
 
 		} catch (MessengerApiException | MessengerIOException e) {
