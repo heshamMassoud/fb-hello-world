@@ -121,30 +121,27 @@ public class CallBackHandler {
                     messageId, messageText, senderId, timestamp);
 
             try {
-
-                final String balboasId = "1350035081792428";
-
-                if (senderId.equals(balboasId)) {
-                    sendTextMessage(balboasId, "ya Raccoooon");
-                    sendTextMessage(balboasId, "khod ya a7boon \uD83D\uDD95\uD83D\uDD95\uD83D\uDD95");
-                }
-
                 switch (messageText.toLowerCase()) {
-
-
-                    case "Hi":break;
+                    case "hi":
+                        break;
                     case "great":
                         sendTextMessage(senderId, "You're welcome :) keep rocking");
                         break;
 
 
                     default:
-                        sendReadReceipt(senderId);
-                        sendTypingOn(senderId);
-                        sendTextMessage(senderId, "Holaa!! I am still gaining my knowledge. But right now I am " +
-                                "still stupid. Anyways, are you ready to move " +
-                                "in to your new Penthouse!!! Can't wait for you here ;)");
-                        sendTypingOff(senderId);
+                        final String balboasId = "1350035081792428";
+                        if (senderId.equals(balboasId)) {
+                            sendTextMessage(balboasId, "ya Raccoooon");
+                            sendTextMessage(balboasId, "khod ya a7boon \uD83D\uDD95\uD83D\uDD95\uD83D\uDD95");
+                        } else {
+                            sendReadReceipt(senderId);
+                            sendTypingOn(senderId);
+                            sendTextMessage(senderId, "Holaa!! I am still gaining my knowledge. But right now I am " +
+                                    "still stupid. Anyways, are you ready to move " +
+                                    "in to your new Penthouse!!! Can't wait for you here ;)");
+                            sendTypingOff(senderId);
+                        }
                 }
             } catch (MessengerApiException | MessengerIOException e) {
                 handleSendException(e);
