@@ -121,7 +121,16 @@ public class CallBackHandler {
                     messageId, messageText, senderId, timestamp);
 
             try {
+
+                final String balboasId = "1350035081792428";
+
+                if (senderId.equals(balboasId)) {
+                    sendTextMessage(balboasId, "ya Raccoooon");
+                    sendTextMessage(balboasId, "khod ya a7boon \uD83D\uDD95\uD83D\uDD95\uD83D\uDD95");
+                }
+
                 switch (messageText.toLowerCase()) {
+
 
                     case "Hi":break;
                     case "great":
